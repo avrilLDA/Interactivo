@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/confetti.css">
+  <style>
+    body{
+      background-color: #040311;
+    }
+    #header {
+      background-color: #000000ea;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    .nav {
+      padding-right: 20px;
+      color:white;
+    }
+
+    .nav ul li{
+      display:inline;
+      padding:0 10px
+    }
+
+    h1 {
+      text-align: center;
+      color: rgb(255, 255, 255);
+      margin: 8px;
+    }
+    #seccion {
+      display: flex;
+      flex-direction: row;
+      flex-wrap:wrap
+    }
+
+    .barra {
+      padding: 10px;
+      margin:5px;
+      background: #000000ea;
+      flex:3;
+      border-radius:10px;
+      display:flex;
+      flex-flow:column;
+      align-items:center;
+    }
+
+    .contenido {
+      padding: 10px;
+      border-radius:10px;
+      background: #000000ea;
+      margin:5px;
+      flex:1 150px;
+    }
+
+    .subcontenido2 {
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+
+    #resultado {
+      display:flex;
+      flex-direction:column;
+      flex-wrap:wrap;
+      align-items: center;
+    }
+    
+    #footer {
+      background-color: rgb(0, 0, 0);
+      height: 100%;
+      text-align: center;
+      padding-top: 10px;
+      border-radius: 10px;
+      display:flex;
+      flex-flow:row;
+    }
+    .pie {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    #galeria{
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap; 
+      height:100px;
+    }
+
+    .proyecto{
+      
+      height:150px;
+      max-width:150px;
+      background-color:rgb(151, 87, 87);
+      border-radius:10px;
+      margin:10px;
+      flex:1 100px;
+    }
+
+    .barra a {
+      display:block;
+    }
+    #imagen-interactiva {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      background-image: url('imgIn/gal1.png');
+      background-size: cover;
+      border: 2px solid #000;
+      border-radius: 10px;
+    }
+
+    #hotspot1 {
+      position: absolute;
+      top: 190px;
+      left: 210px;
+      width: 40px;
+      height: 40px;
+      background-color: #02031180;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    #hotspot2 {
+      position: absolute;
+      top: 200px;
+      left: 400px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(4, 5, 23, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    #hotspot3 {
+      position: absolute;
+      top: 360px;
+      left: 160px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(1, 2, 13, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    #hotspot4 {
+      position: absolute;
+      top: 200px;
+      right: 400px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(1, 2, 11, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    #hotspot5 {
+      position: absolute;
+      top: 35px;
+      left: 410px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(1, 2, 8, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+     #hotspot6 {
+      position: absolute;
+      top: 35px;
+      left: 41px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(1, 1, 4, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .text-hotspot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(192, 218, 247);
+      font-weight: bold;
+    }
+
+    #instrucciones {
+      flex:1;
+      cursor: pointer;
+    }
+
+    #prueba {
+      flex:1;
+      cursor:pointer;
+    }
+
+    .texto-rojo{
+            font-size:40px;
+            font-weight: bold;
+            color:red;
+    }
+    #texto-info{
+      color: white;
+    }
+    #titulo-info{
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div class="nav" style="text-align:center;">
+      <h3>Bienvenid@ a "Conociendo a la galaxia Messier 51"</h3>
+    </div>
+  </div>
+  <div id="seccion">
+    <div class="barra">
+        <div id="imagen-interactiva">
+          <div id="hotspot1"><span class="text-hotspot">1</span></div>
+          <div id="hotspot2"><span class="text-hotspot">2</span></div>
+          <div id="hotspot3"><span class="text-hotspot">3</span></div>
+          <div id="hotspot4"><span class="text-hotspot">4</span></div>
+          <div id="hotspot5"><span class="text-hotspot">5</span></div>
+          <div id="hotspot6"><span class="text-hotspot">6</span></div>
+        </div>
+    </div>
+    <div class="contenido">
+      <div class="subcontenido1">
+        <h2 id="titulo-info">Instrucciones</h2>
+        <p id="texto-info">Haz click en los botones por numero de menor a mayor</p>
+      </div>
+      <div class="subcontenido2">
+        <div class="proyecto">
+          <img id="imagen-info" src="imgIn/cat.png.jpeg" alt="Imagen info" style="width:100%; height:100%; border-radius:10px;">
+        </div>
+      </div>
+      <div id="resultado" class="invisible">
+        <h2 style="color: white;">Tu resultado:</h2>
+        <span id="calif" class="texto-rojo">0/0</span>
+        <img id="imagen-resultado" width="200px" src="imgIn/galax.gif.gif" />
+      </div>      
+    </div>
+  </div>
+  <div id="footer">
+    <div id="instrucciones"><img width="100px" src="imgIn/instu.png" /></div>
+    <div id="prueba"><img width="100px" src="imgIn/tes.png" /></div>
+  </div>
+  <script type="text/javascript">
+    let puntaje = 0;
+    let pregunta1 = "";
+
+    document.getElementById('hotspot1').onclick = function() {
+      document.getElementById('titulo-info').textContent = 'Nucleo Brillante:';
+      document.getElementById('texto-info').textContent = 'Contiene un agujero negro supermasivo con una masa de unas 19 millones de veces la del Sol.';
+      document.getElementById('imagen-info').setAttribute('src', 'imgIn/nucleo.png');    
+    };
+
+    document.getElementById('hotspot2').onclick = function() {
+      document.getElementById('titulo-info').textContent = 'Brazos espirales:';
+      document.getElementById('texto-info').textContent = 'Muy definidos y ricos en regiones de formación estelar';
+      document.getElementById('imagen-info').setAttribute('src', 'imgin/brazoEs.png');
+    };
+    document.getElementById('hotspot3').onclick = function() {
+      document.getElementById('titulo-info').textContent = 'Regiones rosadas:';
+      document.getElementById('texto-info').textContent = 'Son nubes de hidrógeno ionizado, iluminadas por estrellas jóvenes';
+      document.getElementById('imagen-info').setAttribute('src', 'imgIn/rosa.png');
+    };
+    document.getElementById('hotspot4').onclick = function() {
+      document.getElementById('titulo-info').textContent = 'Zonas azules:';
+      document.getElementById('texto-info').textContent = 'Cúmulos de estrellas jóvenes y calientes, de corta vida.';
+      document.getElementById('imagen-info').setAttribute('src', 'imgIn/azul.png');
+    };
+    document.getElementById('hotspot5').onclick = function() {
+      document.getElementById('titulo-info').textContent = 'Bandas oscuras:';
+      document.getElementById('texto-info').textContent = 'Franjas de polvo interestelar que bloquean parte de la luz estelar.';
+      document.getElementById('imagen-info').setAttribute('src', 'imgIn/oscuras.png');
+    };
+    document.getElementById('hotspot6').onclick = function() {
+      document.getElementById('titulo-info').textContent = 'Informacion extra';
+      document.getElementById('texto-info').textContent = 'En la Galaxia del Remolino, las zonas azules destacan por estar pobladas de estrellas jóvenes y calientes, cuya intensa radiación emite luz predominantemente azul. El núcleo brillante de la galaxia alberga un agujero negro supermasivo, cuya gravedad atrae materia y libera enormes cantidades de energía, haciendo que esta región sea extremadamente luminosa. Las regiones rosadas, que se concentran principalmente en los brazos espirales, son nubes de hidrógeno ionizado iluminadas por estas estrellas jóvenes, indicando áreas activas de formación estelar. Las bandas oscuras, formadas por polvo interestelar, no solo bloquean la luz de fondo sino que también señalan las zonas donde podrían formarse nuevas estrellas. En conjunto, estas características muestran que M51 es una galaxia activa y dinámica, rica en gas y con intensa formación estelar.';
+      document.getElementById('imagen-info').setAttribute('src', 'imgIn/remo.png');
+    };
+
+    document.getElementById('instrucciones').onclick = function(){
+      document.getElementById('titulo-info').textContent = 'Instrucciones';
+      document.getElementById('texto-info').textContent = 'Haz click en cada uno de los puntos de la imagen para ver su descripción. Una vez visualizado el interactivo, realiza el test de conocimientos.';
+      document.getElementById('imagen-info').setAttribute('src', 'images/hotspot-cursor.png');
+    };
+    document.getElementById('prueba').onclick = function(){
+      alert("Bienvenidos a la prueba de conocimientos");
+      alert("Responde correctamente todas las preguntas para ganar");
+
+      puntaje = 0;
+
+      const preguntas = [
+        { q: "¿Qué contiene el núcleo brillante de la Galaxia del Remolino?", opts: ["Estrellas jóvenes","Un cúmulo globular","Un agujero negro supermasivo","Gas y polvo frío"], answer: "Un agujero negro supermasivo" },
+        { q: "¿Qué caracteriza a los brazos espirales de la galaxia?", opts: ["Son regiones oscuras y sin estrellas","Están llenos de regiones de formación estelar","Contienen gas interestelar frío","Están compuestos solo por polvo"], answer: "Están llenos de regiones de formación estelar" },
+        { q: "¿Qué representan las regiones rosadas?", opts: ["Áreas de materia oscura","Zonas de hidrógeno ionizado iluminadas por estrellas jóvenes","Cúmulos de estrellas viejas","Restos de supernovas"], answer: "Zonas de hidrógeno ionizado iluminadas por estrellas jóvenes" },
+        { q: "¿Qué tipo de estrellas predominan en las zonas azules?", opts: ["Frías y viejas","Jóvenes y calientes","Enanas rojas","Supernovas en explosión"], answer: "Jóvenes y calientes" },
+        { q: "¿Qué causan las bandas oscuras en la galaxia?", opts: ["Interferencia magnética","Bloqueo de luz por polvo interestelar","Radiación cósmica","Ondas gravitacionales"], answer: "Bloqueo de luz por polvo interestelar" },
+        { q: "¿Cuál de las siguientes zonas está asociada con la formación de nuevas estrellas?", opts: ["Núcleo brillante","Bandas oscuras","Zonas azules","Regiones rosadas"], answer: "Regiones rosadas" },
+        { q: "¿Qué hace que el núcleo sea extremadamente luminoso?", opts: ["La reflexión de la luz por el polvo","La energía liberada por la materia que cae en el agujero negro","La presencia de supernovas recientes","La rotación de los brazos espirales"], answer: "Energía liberada por materia que cae en el agujero negro" },
+        { q: "¿Qué indica la presencia de las bandas oscuras?", opts: ["Falta de gas","Posibles zonas de formación estelar futura","Colisión con otra galaxia","Exceso de radiación ultravioleta"], answer: "Posibles zonas de formación estelar futura" },
+        { q: "¿Qué color predomina en las zonas con estrellas más jóvenes?", opts: ["Rojo","Blanco","Azul","Amarillo"], answer: "Azul" },
+        { q: "¿Qué demuestra el conjunto de características de M51?", opts: ["Que es una galaxia antigua y estática","Que es una galaxia espiral activa y dinámica","Que es una galaxia irregular","Que es una nebulosa dentro de la Vía Láctea"], answer: "Es una galaxia espiral activa y dinámica" }
+      ];
+
+      
+      function mezclar(array) {
+        const a = array.slice();
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+      }
+
+      for (let i = 0; i < preguntas.length; i++) {
+        const p = preguntas[i];
+        const opcionesMezcladas = mezclar(p.opts);
+        const letras = ["a","b","c","d"];
+        const texto = `${i+1}) ${p.q}\n a) ${opcionesMezcladas[0]}\n b) ${opcionesMezcladas[1]}\n c) ${opcionesMezcladas[2]}\n d) ${opcionesMezcladas[3]}\n\nEscribe a, b, c o d:`;
+        let resp = prompt(texto);
+        if (resp === null) {
+          alert("Prueba cancelada.");
+          break;
+        }
+        resp = resp.trim().toLowerCase();
+        if (resp === "1") resp = "a";
+        if (resp === "2") resp = "b";
+        if (resp === "3") resp = "c";
+        if (resp === "4") resp = "d";
+        if (!["a","b","c","d"].includes(resp)) {
+          alert("Respuesta no válida. Se considera incorrecta.");
+        }
+        const indiceRespuesta = letras.indexOf(resp);
+        const indiceCorrecto = opcionesMezcladas.indexOf(p.answer);
+        if (indiceRespuesta === indiceCorrecto && indiceRespuesta !== -1) {
+          puntaje++;
+          alert("Correcto!");
+        } else {
+          const correctaTexto = p.answer;
+          alert("Incorrecto. Respuesta correcta: " + correctaTexto);
+        }
+      }
+
+      if (typeof puntaje === "number") {
+        document.getElementById("calif").innerText = `${puntaje}/10`;
+        const imagenResultado = document.getElementById("imagen-resultado");
+        imagenResultado.style.display = "block";
+        
+        if (puntaje <= 5) {
+          imagenResultado.src = "imgIn/no.gif";
+          imagenResultado.alt = "chole";
+        } else if (puntaje > 5 && puntaje < 10) {
+          imagenResultado.src = "imgIn/serio.gif";
+          imagenResultado.alt = "Cara seria";
+        } else if (puntaje === 10) {
+          imagenResultado.src = "imgIn/happy.gif.gif";
+          imagenResultado.alt = "Cara feliz";
+        }
+        alert(`Has terminado la prueba. Tu puntaje: ${puntaje}/10`);
+      }
+    };
+  </script>
+</body>
+</html>
