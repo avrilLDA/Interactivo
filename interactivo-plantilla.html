@@ -241,8 +241,8 @@
     </div>
   </div>
   <div id="footer">
-    <div id="instrucciones"><img width="100px" src="imgIn/instu.png" /></div>
-    <div id="prueba"><img width="100px" src="imgIn/tes.png" /></div>
+    <div id="instrucciones"><img width="100px" src="img/instu.png" /></div>
+    <div id="prueba"><img width="100px" src="img/tes.png" /></div>
   </div>
   <script type="text/javascript">
     let puntaje = 0;
@@ -250,40 +250,40 @@
 
     document.getElementById('hotspot1').onclick = function() {
       document.getElementById('titulo-info').textContent = 'Nucleo Brillante:';
-      document.getElementById('texto-info').textContent = 'Contiene un agujero negro supermasivo con una masa de unas 19 millones
-      document.getElementById('imagen-info').setAttribute('src', 'imgIn/nucleo.png');    
+      document.getElementById('texto-info').textContent = 'Contiene un agujero negro supermasivo con una masa de unas 19 millones de veces la del Sol.';
+      document.getElementById('imagen-info').setAttribute('src', 'img/nucleo.png');    
     };
 
     document.getElementById('hotspot2').onclick = function() {
       document.getElementById('titulo-info').textContent = 'Brazos espirales:';
       document.getElementById('texto-info').textContent = 'Muy definidos y ricos en regiones de formación estelar';
-      document.getElementById('imagen-info').setAttribute('src', 'imgin/brazoEs.png');
+      document.getElementById('imagen-info').setAttribute('src', 'img/brazoEs.png');
     };
     document.getElementById('hotspot3').onclick = function() {
       document.getElementById('titulo-info').textContent = 'Regiones rosadas:';
       document.getElementById('texto-info').textContent = 'Son nubes de hidrógeno ionizado, iluminadas por estrellas jóvenes';
-      document.getElementById('imagen-info').setAttribute('src', 'imgIn/rosa.png');
+      document.getElementById('imagen-info').setAttribute('src', 'img/rosa.png');
     };
     document.getElementById('hotspot4').onclick = function() {
       document.getElementById('titulo-info').textContent = 'Zonas azules:';
       document.getElementById('texto-info').textContent = 'Cúmulos de estrellas jóvenes y calientes, de corta vida.';
-      document.getElementById('imagen-info').setAttribute('src', 'imgIn/azul.png');
+      document.getElementById('imagen-info').setAttribute('src', 'img/azul.png');
     };
     document.getElementById('hotspot5').onclick = function() {
       document.getElementById('titulo-info').textContent = 'Bandas oscuras:';
       document.getElementById('texto-info').textContent = 'Franjas de polvo interestelar que bloquean parte de la luz estelar.';
-      document.getElementById('imagen-info').setAttribute('src', 'imgIn/oscuras.png');
+      document.getElementById('imagen-info').setAttribute('src', 'img/oscuras.png');
     };
     document.getElementById('hotspot6').onclick = function() {
       document.getElementById('titulo-info').textContent = 'Informacion extra';
       document.getElementById('texto-info').textContent = 'En la Galaxia del Remolino, las zonas azules destacan por estar pobladas de estrellas jóvenes y calientes, cuya intensa radiación emite luz predominantemente azul. El núcleo brillante de la galaxia alberga un agujero negro supermasivo, cuya gravedad atrae materia y libera enormes cantidades de energía, haciendo que esta región sea extremadamente luminosa. Las regiones rosadas, que se concentran principalmente en los brazos espirales, son nubes de hidrógeno ionizado iluminadas por estas estrellas jóvenes, indicando áreas activas de formación estelar. Las bandas oscuras, formadas por polvo interestelar, no solo bloquean la luz de fondo sino que también señalan las zonas donde podrían formarse nuevas estrellas. En conjunto, estas características muestran que M51 es una galaxia activa y dinámica, rica en gas y con intensa formación estelar.';
-      document.getElementById('imagen-info').setAttribute('src', 'imgIn/remo.png');
+      document.getElementById('imagen-info').setAttribute('src', 'img/remo.png');
     };
 
     document.getElementById('instrucciones').onclick = function(){
       document.getElementById('titulo-info').textContent = 'Instrucciones';
       document.getElementById('texto-info').textContent = 'Haz click en cada uno de los puntos de la imagen para ver su descripción. Una vez visualizado el interactivo, realiza el test de conocimientos.';
-      document.getElementById('imagen-info').setAttribute('src', 'images/hotspot-cursor.png');
+      document.getElementById('imagen-info').setAttribute('src', 'img/hotspot-cursor.png');
     };
     document.getElementById('prueba').onclick = function(){
       alert("Bienvenidos a la prueba de conocimientos");
@@ -349,13 +349,13 @@
         imagenResultado.style.display = "block";
         
         if (puntaje <= 5) {
-          imagenResultado.src = "imgIn/no.gif";
+          imagenResultado.src = "img/no.gif";
           imagenResultado.alt = "chole";
         } else if (puntaje > 5 && puntaje < 10) {
-          imagenResultado.src = "imgIn/serio.gif";
+          imagenResultado.src = "img/serio.gif";
           imagenResultado.alt = "Cara seria";
         } else if (puntaje === 10) {
-          imagenResultado.src = "imgIn/happy.gif.gif";
+          imagenResultado.src = "img/happy.gif.gif";
           imagenResultado.alt = "Cara feliz";
         }
         alert(`Has terminado la prueba. Tu puntaje: ${puntaje}/10`);
